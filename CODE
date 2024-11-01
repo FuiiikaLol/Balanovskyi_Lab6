@@ -1,0 +1,22 @@
+#include <iostream> 
+using namespace std;
+
+int main(){
+    float a =15;
+    float b =20;
+    
+    cout<< "a=" <<a<<endl;
+    cout<< "b=" <<b<<endl;
+    
+    float *ptr_a =&a;
+    float *ptr_b =&b;
+    
+    float temp = *ptr_a;
+    *ptr_a= *ptr_b;
+    *ptr_b=temp;
+    
+    cout<<"a="<<a<<endl;
+    cout<<"b="<<b<<endl;
+    
+}
+ 
